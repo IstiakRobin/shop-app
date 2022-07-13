@@ -1,0 +1,7 @@
+*{
+    font-family: poppins;
+}
+.table-data tr td{
+    vertical-align: middle;
+    text-align: center;
+}

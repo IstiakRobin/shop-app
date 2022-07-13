@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card mt-5">
+                    <div class="card-header">
+                        <h3>Shop App</h3>
+                        <a href="#P_modal" data-bs-toggle="modal" class="btn btn-outline-info">ADD PRODUCT</a>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-bordered table-striped table-data">
+                            <thead>
+                                <tr>
+                                    <td>#</td>
+                                    <td>Image</td>
+                                    <td>Name</td>
+                                    <td>price</td>
+                                    <td>quantity</td>
+                                    <td>total</td>
+                                </tr>
+                            </thead>
+                            <tbody id="product_loop_list">
+                               
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade show" id="P_modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Enter Shop Data</h3>
+                    <a href="" class="btn-close" data-bs-dismiss="modal"></a>
+                </div>
+                <div class="modal-body">
+                    <form action="" id="product-form">
+                        <div class="my-2">
+                            <label for="">Name:</label>
+                            <input type="text" class="form-control" name="name">
+                        </div>
+                        <div class="my-2">
+                            <label for="">Image:</label>
+                            <input type="text" class="form-control" name="image">
+                        </div>
+                        <div class="my-2">
+                            <label for="">Price:</label>
+                            <input type="text" class="form-control" name="price">
+                        </div>
+                        <div class="my-2">
+                            <label for="">Quantity:</label>
+                            <input type="text" class="form-control" name="quantity">
+                        </div>
+                        <input type="submit" value="Submit" class="btn btn-outline-info w-100">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <h3 id="msg"></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./function..js"></script>
+    <script src="./app.js"></script>
+    <script src="./bootstrap.bundle.js"></script>
+</body>
+</html>
